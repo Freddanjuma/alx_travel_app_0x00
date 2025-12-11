@@ -1,5 +1,15 @@
 ALX Travel App – Backend API (Django + DRF + MySQL)
 
+ALX Travel App: This project implements a RESTful API for managing travel listings and bookings using Django and Django REST Framework.Project StructureThe project is built using Django and follows a standard app structure. The main functionalities are encapsulated within the listings app.FeaturesListings Management: Create, read, update, and delete travel listings.Booking Management: Create, read, update, and delete bookings.API Documentation: Endpoints are structured to be self-documenting via DRF's browsable API.API EndpointsAll API endpoints are prefixed with /api/ (assuming standard configuration).ListingsGET /api/listings/ - Retrieve a list of all travel listings.POST /api/listings/ - Create a new travel listing.GET /api/listings/{id}/ - Retrieve details of a specific listing.PUT /api/listings/{id}/ - Update a specific listing.PATCH /api/listings/{id}/ - Partially update a specific listing.DELETE /api/listings/{id}/ - Delete a specific listing.BookingsGET /api/bookings/ - Retrieve a list of all bookings.POST /api/bookings/ - Create a new booking.GET /api/bookings/{id}/ - Retrieve details of a specific booking.PUT /api/bookings/{id}/ - Update a specific booking.PATCH /api/bookings/{id}/ - Partially update a specific booking.DELETE /api/bookings/{id}/ - Delete a specific booking.Tech StackBackend: Django, Django REST FrameworkDatabase: SQLite (Default for development)Setup and InstallationClone the repository:git clone <repository-url>
+cd alx_travel_app_0x01
+Create and activate a virtual environment:python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+Install dependencies:pip install -r requirements.txt
+Run migrations:python manage.py migrate
+Start the development server:python manage.py runserver
+Access the API:Open your browser and navigate to http://127.0.0.1:8000/api/ to explore the endpoints.
+
+
 A real-world backend system for a travel listing platform, built using Django, Django REST Framework, and MySQL, following professional software engineering standards.
 
 This project is part of the ALX Backend Specialization and represents Milestone 1 & Milestone 2 combined:

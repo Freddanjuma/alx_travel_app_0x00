@@ -58,6 +58,9 @@ INSTALLED_APPS = [
     'corsheaders',
     'drf_yasg',
     'listings',
+    'drf_spectacular',
+    'drf_spectacular.swagger',
+
 ]
 
 MIDDLEWARE = [
@@ -101,6 +104,11 @@ DATABASES = {
         default=f"sqlite:///{BASE_DIR / 'db.sqlite3'}"  # Fallback to SQLite
     )
 }
+
+REST_FRAMEWORK = {
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+}
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
